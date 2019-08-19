@@ -1,6 +1,5 @@
 /*Requiring: MySQL (relationship database), inquirer (user input), cli-table (user table display)*/
 const mysql = require("mysql");
-//const Table = require("cli-table");
 
 /*Initializing MySQL Connection*/
 let connection = mysql.createConnection({
@@ -11,7 +10,7 @@ let connection = mysql.createConnection({
     database: "burgers_db"
 });
 
-/*Running logic. Functions nested within displayProducts*/
+//making connection
 connection.connect(function(err) {
     if (err) {
       console.error("error connecting: " + err.stack);
@@ -19,5 +18,5 @@ connection.connect(function(err) {
     }
     console.log("connected as id " + connection.threadId);
   });
-
+// Export connection for our ORM to use.
   module.exports = connection;

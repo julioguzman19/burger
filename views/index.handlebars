@@ -3,11 +3,11 @@
 	  <img src="assets/images/sparkleburger.gif" class="rounded" alt="Sparkle Burger Image">
 	</div> --}}
 
-	<h1 class="text-center">EAT DA BURGER!!</h1>
+	<h1 class="text-center">Eat Da Burger!!!</h1>
 	<!-- Row for list of burgers entered -->
 	<div class="row">
 		<!-- Left list: Burgers entered, but not devoured yet -->
-		<div class="col-md-5" id="not-devoured">
+		<div class="col-md-5 burger-box" id="not-devoured">
 			<!-- Pass in data from server.js -->
 			<ul class="list-group">
 			  {{#each burgers}}
@@ -23,7 +23,7 @@
 		</div>
 
 		<!-- Right list: Burgers devoured -->
-		<div class="col-md-5" id="devoured">
+		<div class="col-md-5 burger-box" id="devoured">
 			<ul class="list-group">
 				{{#each burgers}}
 					{{#if devoured}}
@@ -39,7 +39,7 @@
 		<div class="col-md-5">
 			<form class="create-form">
 				<div class="form-group">
-					<input class="form-control form-control-lg" type="text" name="burger_name"  placeholder="Type in a burger here!">
+					<input class="form-control form-control-lg" type="text" name="burger_name"  placeholder="Add Burger!">
 					<br>
 					<button type="submit" class="btn btn-primary btn-lg burger-button">Submit</button>
 				</div>

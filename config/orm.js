@@ -39,11 +39,7 @@ function printQuestionMarks(num) {
     return arr.toString();
   }
 
-//selectAll()
-//insertOne()
-//updateOne()
-
-var orm = {
+let orm = {
     selectAll: function(tableInput, cb) {
       var queryString = "SELECT * FROM " + tableInput + ";";
       connection.query(queryString, function(err, result) {
