@@ -1,10 +1,9 @@
 // Requiringnpm express to create a router & burger.js for database
-let express = require("express");
-let burger = require("../models/burger.js");
-let router = express.Router();
+const express = require("express");
+const router = express.Router();
 
 // Import the model (burger.js) to use its database functions.
-let burger = require("../models/burger.js");
+const burger = require("../models/burger.js");
 
 // Create all our routes and set up logic within those routes where required.
 
