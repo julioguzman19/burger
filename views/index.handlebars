@@ -1,14 +1,20 @@
-<div class="container">
+<div class="container bg">
 {{!-- 	<div class="text-center">
 	  <img src="assets/images/sparkleburger.gif" class="rounded" alt="Sparkle Burger Image">
 	</div> --}}
 
 	<h1 class="text-center">Eat Da Burger!!!</h1>
+
 	<!-- Row for list of burgers entered -->
 	<div class="row">
-		<!-- Left list: Burgers entered, but not devoured yet -->
+		<!-- Top list: Burgers entered, but not devoured yet -->
+
+
 		<div class="col-md-5 burger-box" id="not-devoured">
+					<br>
+		<h2>Burgers Available To Eat!</h2>
 			<!-- Pass in data from server.js -->
+
 			<ul class="list-group">
 			  {{#each burgers}}
 			  	{{#unless devoured}}
@@ -18,12 +24,14 @@
 			</ul>
 		</div>
 
+
 		<!-- Forcing a space between the two columns -->
 		<div class="col-md-2">
 		</div>
 
-		<!-- Right list: Burgers devoured -->
+		<!-- Bottom list: Burgers devoured -->
 		<div class="col-md-5 burger-box" id="devoured">
+			<h2>Burgers Devoured!</h2>
 			<ul class="list-group">
 				{{#each burgers}}
 					{{#if devoured}}
