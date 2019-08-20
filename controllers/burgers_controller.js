@@ -36,7 +36,7 @@ router.get("/", function(req, res) {
   //put request is used to create or update
   //utilizing updateOne function in orm.js
   router.put("/api/burgers/:id", function(req, res) {
-    let condition = "id = " + req.params.id;
+    let burgerId = "id = " + req.params.id;
   
     console.log("Burger status: ", burgerId);
   
