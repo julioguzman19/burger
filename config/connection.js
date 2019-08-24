@@ -1,17 +1,17 @@
 /*Requiring: MySQL (relationship database), inquirer (user input), cli-table (user table display)*/
 const mysql = require("mysql");
-
+let connection;
 /*Initializing MySQL Connection*/
 if(process.env.JAWSDB_URL){
   connection = mysql.createConnection(process.env.JAWSDB_URL);
 }
 else{
-let connection = mysql.createConnection({
-    host: "localhost",
+   connection = mysql.createConnection({
+    host: "sulnwdk5uwjw1r2k.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     port: 3306,
-    user: "root",
-    password: "root",
-    database: "burgers_db"
+    user: "	l8fzotpjz8imzxe1",
+    password: "	f33s54h6m0j0pabw",
+    database: "xpvdxniw7k26g0ru"
 });
 };
 //making connection
